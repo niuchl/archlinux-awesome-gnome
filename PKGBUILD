@@ -17,7 +17,7 @@ md5sums=('0adaf444fb792e6d918379f6989f66dd'
          '871ecdef3228176b42e9e455c63e942f'
          '72d1b2d982650851cfcd1f12bb4fbff5')
 
-build() {
+package() {
     cd $srcdir
     install -Dm644 $srcdir/${source[2]} $pkgdir/usr/share/gnome-session/sessions/${source[2]}
     install -Dm644 $srcdir/${source[1]} $pkgdir/usr/share/applications/${source[1]}
